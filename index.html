@@ -44,6 +44,8 @@
             transform: rotate(15deg);
             box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
             border: 2px dashed gold;
+            font-size: 0.8rem;
+            text-align: center;
         }
         h1 {
             text-align: center;
@@ -52,9 +54,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-        .quest-log {
-            margin-top: 30px;
-        }
+        .quest-log { margin-top: 30px; }
         .quest-item {
             border-bottom: 1px solid rgba(0,0,0,0.1);
             padding: 15px 0;
@@ -65,6 +65,11 @@
             font-size: 1.2rem;
             display: flex;
             justify-content: space-between;
+        }
+        .genre-tag {
+            font-size: 0.8rem;
+            font-style: italic;
+            color: var(--gold);
         }
         .stat-box {
             display: flex;
@@ -80,37 +85,47 @@
 </head>
 <body>
     <div class="scroll">
-        <div class="seal">OZAN</div>
+        <div class="seal">PRODUCER<br>VERIFIED</div>
         <h1>The Chronicles of Ozan Erkan</h1>
         <p style="text-align: center; font-style: italic;">"Master Producer, Project Architect, Lifelong Adventurer"</p>
 
         <div class="stat-box">
             <div class="stat"><b>34+ YRS</b> Gaming XP</div>
-            <div class="stat"><b>AWS</b> Cloud Certified</div>
+            <div class="stat"><b>AWS</b> Certified</div>
             <div class="stat"><b>PMP</b> Trained</div>
-            <div class="stat"><b>TR/EN/DE</b> Languages</div>
+            <div class="stat"><b>TR/EN/DE</b> Tongues</div>
         </div>
 
         <div class="quest-log">
             <div class="quest-item">
-                <div class="quest-title"><span>Quest: The Hunt (Crytek)</span> <span>2018-2020</span></div>
-                <p>Oversaw the localization and technical sanctum for <i>Hunt: Showdown</i>. Led a war-party of 30 across internal and mercenary (outsource) lines[cite: 57, 62].</p>
+                <div class="quest-title"><span>Hunt: Showdown</span> <span class="genre-tag">Extraction Shooter</span></div>
+                <p>Oversaw the technical sanctum and localization for this AAA titan. Led cross-functional efforts to ensure global compliance and stability.</p>
             </div>
             
             <div class="quest-item">
-                <div class="quest-title"><span>Quest: Studio Command (LostCTRL)</span> <span>2022-2023</span></div>
-                <p>Commanded daily operations for a 40-strong guild[cite: 46, 47]. Bridged the gap between the Artisans, Engineers, and Scribes to forge <i>Nora’s Ark</i>[cite: 49].</p>
+                <div class="quest-title"><span>Arena of Faith</span> <span class="genre-tag">Mobile MOBA</span></div>
+                <p>Managed feature implementation and technical synchronization for competitive mobile play during my tenure at Crytek.</p>
             </div>
 
             <div class="quest-item">
-                <div class="quest-title"><span>Quest: Cloud Architect (Sufle)</span> <span>Present</span></div>
-                <p>Currently leading 35+ active campaigns in the AWS Cloud realms[cite: 33]. Managing the treasury and high-level strategy for gaming infrastructure[cite: 34, 35].</p>
+                <div class="quest-title"><span>Black Diamond VR</span> <span class="genre-tag">Virtual Reality</span></div>
+                <p>Commanded a war-party of 30, bridging local and mercenary (outsource) teams to forge a high-fidelity VR experience.</p>
+            </div>
+
+            <div class="quest-item">
+                <div class="quest-title"><span>Nora’s Ark</span> <span class="genre-tag">Match-3 Puzzle</span></div>
+                <p>Served as Producer and multi-way bridge for the studio. Guided the guild through restructure to a successful soft launch.</p>
+            </div>
+
+            <div class="quest-item">
+                <div class="quest-title"><span>WolfBlade</span> <span class="genre-tag">Action / Adventure</span></div>
+                <p>Facilitated the agile mindset and day-to-day operations, ensuring the artisans and engineers remained in perfect synchronization.</p>
             </div>
         </div>
 
         <h3 style="margin-top:40px; border-bottom: 1px solid var(--gold);">The Hero's Inventory (Skills)</h3>
         <p><b>Tools:</b> Jira, Azure DevOps, ClickUp, Asana.<br>
-        <b>Magic:</b> Agile Mindset, Sprint Planning, Milestone Cartography[cite: 42, 48, 59].</p>
+        <b>Magic:</b> Agile Mindset, Sprint Planning, Milestone Cartography, War-Room Assembly.</p>
     </div>
 </body>
 </html>
