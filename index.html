@@ -2,147 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozan Erkan | Senior Game Producer</title>
+    <title>Ozan Erkan | Master Producer</title>
     <style>
         :root {
-            --neon-blue: #00f3ff;
-            --neon-amber: #ffaa00;
-            --bg-dark: #0a0a0c;
-            --card-bg: #161b22;
+            --parchment: #f4e4bc;
+            --ink: #2c1e16;
+            --gold: #b8860b;
+            --seal: #8b0000;
         }
-
         body {
-            background-color: var(--bg-dark);
-            color: #e0e0e0;
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        header {
-            border: 2px solid var(--neon-blue);
-            padding: 20px;
-            margin-bottom: 30px;
-            box-shadow: 0 0 15px var(--neon-blue);
-            background: rgba(0, 243, 255, 0.05);
-        }
-
-        .status-bar {
+            background-color: #1a1a1a;
+            background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png');
+            color: var(--ink);
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
             display: flex;
-            justify-content: space-between;
-            font-size: 0.8rem;
-            color: var(--neon-amber);
-            border-bottom: 1px solid #333;
-            margin-bottom: 10px;
+            justify-content: center;
+            padding: 40px;
         }
-
-        h1 {
-            margin: 0;
-            color: var(--neon-blue);
-            text-transform: uppercase;
-            letter-spacing: 5px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border-left: 4px solid var(--neon-blue);
-            padding: 20px;
-            transition: 0.3s;
+        .scroll {
+            background-color: var(--parchment);
+            max-width: 850px;
+            padding: 60px;
+            border: 15px solid #3e2723;
+            box-shadow: 20px 20px 50px rgba(0,0,0,0.8);
             position: relative;
-            overflow: hidden;
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
         }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
-            background: #1c2128;
+        .seal {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            width: 80px;
+            height: 80px;
+            background: var(--seal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: gold;
+            font-weight: bold;
+            transform: rotate(15deg);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            border: 2px dashed gold;
         }
-
-        .card h3 {
-            margin-top: 0;
-            color: var(--neon-blue);
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
-
-        .tag {
-            font-size: 0.7rem;
-            background: #333;
-            padding: 2px 8px;
-            border-radius: 10px;
-            margin-right: 5px;
-            color: var(--neon-amber);
-        }
-
-        .sidebar {
-            border: 1px solid #333;
-            padding: 15px;
+        .quest-log {
             margin-top: 30px;
         }
-
-        .glitch-text {
-            color: var(--neon-amber);
-            font-weight: bold;
+        .quest-item {
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            padding: 15px 0;
         }
+        .quest-title {
+            font-weight: bold;
+            color: #5d4037;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .stat-box {
+            display: flex;
+            justify-content: space-around;
+            background: rgba(0,0,0,0.05);
+            padding: 15px;
+            border: 1px solid var(--gold);
+            margin-bottom: 30px;
+        }
+        .stat { text-align: center; font-size: 0.9rem; }
+        .stat b { display: block; color: var(--gold); font-size: 1.1rem; }
     </style>
 </head>
 <body>
+    <div class="scroll">
+        <div class="seal">OZAN</div>
+        <h1>The Chronicles of Ozan Erkan</h1>
+        <p style="text-align: center; font-style: italic;">"Master Producer, Project Architect, Lifelong Adventurer"</p>
 
-<header>
-    <div class="status-bar">
-        <span>ID: OZAN_ERKAN_081</span>
-        <span>LOCATION: ISTANBUL_HQ</span>
-        <span>OS: AWS_CLOUD_PRACTITIONER_V2.5</span>
+        <div class="stat-box">
+            <div class="stat"><b>34+ YRS</b> Gaming XP</div>
+            <div class="stat"><b>AWS</b> Cloud Certified</div>
+            <div class="stat"><b>PMP</b> Trained</div>
+            <div class="stat"><b>TR/EN/DE</b> Languages</div>
+        </div>
+
+        <div class="quest-log">
+            <div class="quest-item">
+                <div class="quest-title"><span>Quest: The Hunt (Crytek)</span> <span>2018-2020</span></div>
+                <p>Oversaw the localization and technical sanctum for <i>Hunt: Showdown</i>. Led a war-party of 30 across internal and mercenary (outsource) lines[cite: 57, 62].</p>
+            </div>
+            
+            <div class="quest-item">
+                <div class="quest-title"><span>Quest: Studio Command (LostCTRL)</span> <span>2022-2023</span></div>
+                <p>Commanded daily operations for a 40-strong guild[cite: 46, 47]. Bridged the gap between the Artisans, Engineers, and Scribes to forge <i>Nora’s Ark</i>[cite: 49].</p>
+            </div>
+
+            <div class="quest-item">
+                <div class="quest-title"><span>Quest: Cloud Architect (Sufle)</span> <span>Present</span></div>
+                <p>Currently leading 35+ active campaigns in the AWS Cloud realms[cite: 33]. Managing the treasury and high-level strategy for gaming infrastructure[cite: 34, 35].</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top:40px; border-bottom: 1px solid var(--gold);">The Hero's Inventory (Skills)</h3>
+        <p><b>Tools:</b> Jira, Azure DevOps, ClickUp, Asana.<br>
+        <b>Magic:</b> Agile Mindset, Sprint Planning, Milestone Cartography[cite: 42, 48, 59].</p>
     </div>
-    <h1>Ozan Erkan</h1>
-    <p>SENIOR GAME PRODUCER // [cite: 1, 2]</p>
-</header>
-
-<div class="grid">
-    <div class="card">
-        <span class="tag">AAA</span> <span class="tag">PC/CONSOLE</span>
-        <h3>Hunt: Showdown</h3>
-        <p>Managed localization, technical guidelines, and QA for Crytek’s flagship extraction shooter. [cite: 56, 57, 61]</p>
-    </div>
-
-    <div class="card">
-        <span class="tag">MOBILE</span> <span class="tag">STUDIO LEAD</span>
-        <h3>LostCTRL Studio</h3>
-        <p>Producer for Nora’s Ark and WolfBlade. Directed cross-functional teams of 40+ members. [cite: 43, 46, 49]</p>
-    </div>
-
-    <div class="card">
-        <span class="tag">VR</span> <span class="tag">HARDWARE</span>
-        <h3>Black Diamond VR</h3>
-        <p>Led a massive team of 30 (internal and outsource) to deliver high-fidelity VR experiences. [cite: 62]</p>
-    </div>
-
-    <div class="card">
-        <span class="tag">CLOUD</span> <span class="tag">SAAS</span>
-        <h3>Sufle Gaming</h3>
-        <p>Heading project management for AWS-backed cloud solutions and gaming infrastructure. [cite: 30, 32, 36]</p>
-    </div>
-</div>
-
-<div class="sidebar">
-    <h2 style="color:var(--neon-blue)">CORE_STATS</h2>
-    <ul>
-        <li><span class="glitch-text">XP:</span> 34+ Years of Gaming Immersion [cite: 21]</li>
-        <li><span class="glitch-text">MANA:</span> Jira, Azure DevOps, ClickUp, Asana [cite: 13, 14, 15, 16]</li>
-        <li><span class="glitch-text">GUILD:</span> PMP Trained, Scrum Master Certified [cite: 115, 116]</li>
-        <li><span class="glitch-text">LANG:</span> TR (Native), EN (Prof.), DE [cite: 18, 19]</li>
-    </ul>
-</div>
-
-<footer style="text-align: center; margin-top: 50px; opacity: 0.5; font-size: 0.7rem;">
-    TERMINAL CONNECTION ESTABLISHED // 2026 // NO RIGHTS RESERVED
-</footer>
-
 </body>
 </html>
